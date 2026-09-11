@@ -7,6 +7,129 @@
   box-sizing: border-box;
 }
 
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 52px;
+  padding: 0 22px;
+  background-color: #fff;
+  border-bottom: 1px solid #e8eaed;
+  color: #5f6368;
+  font-size: 14px;
+  position: sticky;
+  top: 0;
+}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 16px;
+  margin-right: 48px;
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.site-brand img {
+  display: block;
+  width: 33px;
+  height: 32px;
+  border-radius: 0;
+}
+
+.site-brand span {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Navigation links */
+.site-nav {
+  flex: 1;
+  min-width: 0;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  list-style: none;
+}
+
+.site-nav a,
+.site-nav summary {
+  display: flex;
+  align-items: center;
+  min-height: 52px;
+  color: #5f6368;
+  font-size: 14px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-nav a:hover,
+.site-nav summary:hover {
+  color: #1a73e8;
+}
+
+.site-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 200px;
+  height: 36px;
+  padding: 0 10px;
+  border-radius: 24px;
+  background-color: #f5f6f7;
+  font-size: 16px;
+  margin-right: 280px;
+  border: none;
+}
+.mode {
+  size: 10px;
+  margin-left: 30px;
+}
+
+.site-sign-in {
+    color: #202124;
+    text-decoration: none;
+    white-space: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.site-sign-in:hover {
+    text-decoration: none;
+    background-color: #f5f6f7;
+    color: #202124;
+}
+
+
+.site-announcement {
+  padding: 26px 22px;
+  background-color: #1a73e8;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* aside notice */
+.site-notice {
+  padding: 22px;
+  background-color: #e8f0fe;
+  color: #3740aa;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.site-notice a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 body {
   background-color: #ffffff;
   font-family: "Google Sans", sans-serif;
@@ -503,23 +626,23 @@ img {
 }
 
 .flex-child8 {
-    /* border: 2px solid purple; */
-    width: 900px;
+  /* border: 2px solid purple; */
+  width: 900px;
 }
 
 .flex-child8 h2 {
-    font-size: 32px;
-    font-weight: 700;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .child8paragraph {
-    font-size: 20px;
-    font-weight: 400;
-    padding: 20px 0px 20px 0px;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 0px 20px 0px;
 }
 
 .baseline {
-    /* border: 2px solid red; */
+  /* border: 2px solid red; */
   display: block;
   text-align: center;
   background-color: #fff;
@@ -530,29 +653,28 @@ img {
 }
 
 .baseline:hover {
-     border: none;
-   background-color: #fff;
+  border: none;
+  background-color: #fff;
 }
 
 .child8link {
-    font-size: 20px;
-    font-weight: 400;
-    color: #202124;
-    text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #202124;
+  text-decoration: none;
 }
 
 .child8link:hover {
-    border: none;
-    text-decoration: underline;
-    color: #202124;
+  border: none;
+  text-decoration: underline;
+  color: #202124;
 }
 
 .flex-child8 p {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 20px 0px 20px 0px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 20px 0px 20px 0px;
 }
-
 
 .flexparent8-9 {
   background-color: #f5f6f7;
@@ -572,7 +694,7 @@ img {
 }
 
 .Explore-CSS {
-    /* border: 2px solid red; */
+  /* border: 2px solid red; */
   display: block;
   text-align: center;
   background-color: #f5f6f7;
@@ -583,150 +705,148 @@ img {
 }
 
 .Explore-CSS:hover {
-    border: none;
-   background-color: #f5f6f7;
+  border: none;
+  background-color: #f5f6f7;
 }
 
 .Developer-newsletter-body {
-text-align: center; 
- padding: 48px 24px 64px;
-    background-color: #f5f6f7;
-    color: #202124;
-    text-align: center;
+  text-align: center;
+  padding: 48px 24px 64px;
+  background-color: #f5f6f7;
+  color: #202124;
+  /* border: 2px solid red; */
 }
 
 .Developer-newsletter-body h2 {
-    /* border: 2px solid red; */
-    font-size: 48px;
-    font-weight: 700;
-    padding: 50px 50px 10px 50px;
-       margin: 0 0 16px;
+  /* border: 2px solid red; */
+  font-size: 48px;
+  font-weight: 700;
+  padding: 50px 50px 10px 50px;
+  margin: 0 0 16px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .Developer-newsletter-body p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .Developer-newsletter-body .newsletter-form {
-    width: 100%;
-    max-width: 632px;
-    margin: 44px auto 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-    font-size: 16px;
+  width: 100%;
+  max-width: 632px;
+  margin: 44px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  font-size: 16px;
 }
 
 .Developer-newsletter-body .newsletter-name-row {
-    display: flex;
-    gap: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 .Developer-newsletter-body .newsletter-field {
-    flex: 1;
-    min-width: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .Developer-newsletter-body .newsletter-field label {
-    display: block;
-    margin-bottom: 4px;
-    color: #70757a;
-    font-size: 12px;
-    line-height: 16px;
+  display: block;
+  margin-bottom: 4px;
+  color: #70757a;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .Developer-newsletter-body .newsletter-field input {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    height: 36px;
-    padding: 6px 8px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0;
-    background-color: #fff;
-    color: #202124;
-    font: inherit;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  background-color: #fff;
+  color: #202124;
+  font: inherit;
 }
 
 .Developer-newsletter-body .newsletter-field select {
-    display: block;
-    width: 100%;
-    min-width: 0;
-    height: 36px;
-    padding: 6px 8px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0;
-    background-color: #fff;
-    color: #202124;
-    font: inherit;
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 36px;
+  padding: 6px 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0;
+  background-color: #fff;
+  color: #202124;
+  font: inherit;
 }
 
 .Developer-newsletter-body .newsletter-field input::placeholder {
-    color: #80868b;
-    opacity: 1;
+  color: #80868b;
+  opacity: 1;
 }
 
 .Developer-newsletter-body .newsletter-field select {
-    background-color: transparent;
+  background-color: transparent;
 }
 
-
 .Developer-newsletter-body input:focus-visible {
-    outline: 2px solid #1a73e8;
-    outline-offset: 2px;
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
 }
 
 .Developer-newsletter-body select:focus-visible {
-    outline: 2px solid #1a73e8;
-    outline-offset: 2px;
+  outline: 2px solid #1a73e8;
+  outline-offset: 2px;
 }
 
-
 .Developer-newsletter-body .newsletter-note {
-    margin: 12px 0;
-    font-size: 16px;
-    line-height: 24px;
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .Developer-newsletter-body .newsletter-check {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    font-size: 16px;
-    line-height: 24px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
 }
 
 .Developer-newsletter-body .newsletter-check input {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    margin: 0;
-    accent-color: #1a73e8;
-    cursor: pointer;
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #1a73e8;
+  cursor: pointer;
 }
 
 .Developer-newsletter-body .newsletter-check a {
-    color: #1a73e8;
-    text-decoration: none;
+  color: #1a73e8;
+  text-decoration: none;
 }
 
 .Developer-newsletter-body .newsletter-check a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    .Developer-newsletter-body > h2 {
-        font-size: 32px;
-    }
+  .Developer-newsletter-body > h2 {
+    font-size: 32px;
+  }
 
-    .Developer-newsletter-body .newsletter-name-row {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .Developer-newsletter-body .newsletter-name-row {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
